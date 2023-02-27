@@ -140,6 +140,7 @@ def main():
             if cont == 'y':
                 continue
             else:
+                input(Fore.RED + 'Press [ENTER] to quit...' + Fore.RESET)
                 quit()
 
         elif choice == str(int(2)):
@@ -160,6 +161,7 @@ def main():
                 current_news()
 
             elif cont2 == str(int(3)):
+                input(Fore.RED + 'Press [ENTER] to quit...' + Fore.RESET)
                 quit()
 
         else:
