@@ -1,6 +1,6 @@
 # MazZ's News-Feed
 This program uses the 'currents' API which keeps track of current/old News articles from a list of hundreds of reliable 
-news outlets. Including but not limited to: FOX, CNN, ABC, NBC, MSNBC, NPR, AP, BuzzFeed, Washington Post, NY Times, BBC,
+news outlets. Including but not limited to: FOX, CNN, ABC, NBC, MSNBC, NPR, AP, BuzzFeed, Washington Post, TheHill, NY Times, BBC,
 SCMP, ADN, CDN, WWLP, TheRegister, SMH, WBBJTV, TMZ, WSVN, WNBC, and MANY MANY MORE!
 
 You can see all the latest articles that have been published, from various News agencies. Or search for something 
@@ -21,4 +21,4 @@ read ANSI chars. I am currently working on a fix for this.
 
 
 # Screenshot
-![image](https://user-images.githubusercontent.com/22335730/221451284-ef2060d1-eeac-467f-ae4b-eec10bf36fd2.png)
+![image](https://user-images.githubusercontent.com/22335730/221451597-86b6346c-99ee-4e48-9868-4233b94b31ff.png)
