@@ -1,7 +1,5 @@
 # MazZ's News-Feed
-This program uses the 'currents' API which keeps track of current/old News articles from a list of hundreds of reliable 
-news outlets. Including but not limited to: FOX, CNN, ABC, NBC, MSNBC, NPR, AP, BuzzFeed, Washington Post, TheHill, NY Times, BBC,
-SCMP, ADN, CDN, WWLP, TheRegister, SMH, WBBJTV, TMZ, WSVN, WNBC, and MANY MANY MORE!
+This program uses the 'currents' API which keeps track of current/old News articles from a list of over 43,552 news outlets, all over the world! Including but not limited to: FOX, CNN, ABC, NBC, MSNBC, NPR, AP, BuzzFeed, Washington Post, TheHill, NY Times, BBC, SCMP, ADN, CDN, WWLP, TheRegister, SMH, WBBJTV, TMZ, WSVN, WNBC, and MANY MANY MORE!
 
 You can see all the latest articles that have been published, from various News agencies. Or search for something 
 specific using keyword(s)/phrases. 
