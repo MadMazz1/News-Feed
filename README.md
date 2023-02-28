@@ -14,8 +14,7 @@ https://currentsapi.services/en
     - If not self-evident >> Replace API_KEY with your own >> Run Program >> VOILA!
     
 Note:
-If you're running this in a Win32 tty session, the colors may mess with the output since the tty itself does not seem to
-read ANSI chars. I am currently working on a fix for this.
+Fixed the issue with win32tty not displaying the color output.
 
 
 # Screenshot
