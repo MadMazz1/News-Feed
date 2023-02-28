@@ -1,5 +1,7 @@
 from currentsapi import CurrentsAPI
 from colorama import Fore
+import platform
+import os
 
 '''
 -=-=--=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-MazZ's News Hub-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -18,16 +20,26 @@ https://currentsapi.services/en
 - Register account (Free)
 - You'll be given a free API key which allows for up to 600 requests per day.
     - If not self-evident >> Replace API_KEY with your own >> Run Program >> VOILA!
-
-Note:
-If you're running this in a Win32 tty session, the colors may mess with the output since the tty itself does not seem to
-read the ANSI chars from the color lib 'colorama >>> Fore'. I'll have a fix for this in the future.
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 '''
 
 API_KEY = 'YOUR API KEY GOES HERE'
 
 api = CurrentsAPI(api_key=API_KEY)
+
+
+# Clears terminal, depending on the OS.
+def clear_screen():
+    plat = platform.uname()[0]
+
+    if plat == 'Windows':
+        os.system('cls')
+
+    else:
+        os.system('clear')
+
+
+clear_screen()
 
 
 def current_news():
@@ -130,6 +142,7 @@ def main():
                        Fore.MAGENTA + "Choice: " + Fore.RESET).lower()
 
         if choice == str(int(1)):
+            clear_screen()
             search = input(Fore.BLUE + "Type Keyword or name of Article to search for: " + Fore.RESET).lower()
             print(Fore.GREEN + "Searching..." + Fore.RESET)
 
@@ -138,8 +151,10 @@ def main():
             cont = input(Fore.BLUE + "Would you like to search for something else? [Y/N]: " + Fore.RESET).lower()
 
             if cont == 'y':
+                clear_screen()
                 continue
             else:
+                clear_screen()
                 input(Fore.RED + 'Press [ENTER] to quit...' + Fore.RESET)
                 quit()
 
@@ -154,13 +169,18 @@ def main():
                           "Choice: " + Fore.RESET).lower()
 
             if cont2 == str(int(1)):
+                clear_screen()
                 phrase = input(Fore.BLUE + "What News Topic would you like to search for?: " + Fore.RESET).lower()
                 search_news(keyword=phrase)
 
             elif cont2 == str(int(2)):
+                clear_screen()
                 current_news()
+                input(Fore.RED + "Press [ENTER] to return to home screen..." + Fore.RESET)
+                clear_screen()
 
             elif cont2 == str(int(3)):
+                clear_screen()
                 input(Fore.RED + 'Press [ENTER] to quit...' + Fore.RESET)
                 quit()
 
