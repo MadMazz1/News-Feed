@@ -13,8 +13,11 @@ https://currentsapi.services/en
 - You'll be given a free API key which allows for up to 600 requests per day.
     - If not self-evident >> Replace API_KEY with your own >> Run Program >> VOILA!
     
-Note:
-Fixed the issue with win32tty not displaying the color output.
+# TODO:
+<br /><b>#1</b> <s>Issue with win32tty not displaying the color output.</s> <b>[<u>Fixed</u>]</b>
+- Colors should now output correctly for any terminal.
+
+<br/><b>#2</b> Add ability for user to open article by inputting the Article#
 
 
 # Screenshot
